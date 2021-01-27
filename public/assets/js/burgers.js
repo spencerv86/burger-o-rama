@@ -15,7 +15,7 @@ $(function () {
         });
     });
 
-    $(#add-bgr).on("click", function(event) {
+    $("#add-bgr").on("click", function(event) {
         event.preventDefault();
 
         const newBurger = {
