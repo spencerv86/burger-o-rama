@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# Eatin' Burgers App
+# Burger-o-rama App
 
 ## Description
 
