@@ -1,6 +1,22 @@
+.fry-back {
+  background-image: url(../images/french_fry_bg.png);
+}
+
+.title-header {
+  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(251, 250, 250);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
 #burger-pic {
   max-width: 250px;
   max-height: 250px;
+}
+
+body {
+  background-color: rgb(251, 193, 170);
 }
 
 li {
