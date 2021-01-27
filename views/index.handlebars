@@ -1,6 +1,50 @@
-<h1>Cats!</h1>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 text-center">Spencer's Burger-o-rama!</h1>
+    <img src="/assets/images/burger.png" class="mx-auto d-block img-fluid" id="burger-pic" alt="cartoon burger">
+  </div>
+</div>
 
-<h2>Cats that are not sleepy!</h2>
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-6">
+      <h3>Ordered Burgers</h3>
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3>Eaten Burgers</h3>
+      <ul>
+          {{#each burgers}}
+            {{#if devoured}}
+              {{> burgers/burger-block devoured=false}}
+            {{/if}}
+          {{/each}}
+      </ul>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <form>
+        <div class="form-group">
+          <label for="bgr">Enter the name of a burger here!</label>
+          <textarea class="form-control" id="bgr" name="burger_name"></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning" id="add-bgr">Order burger!</button>
+      </form>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>
+
+{{!-- <h2>Cats that are not sleepy!</h2>
 
 <ul>
   {{#each cats}}
@@ -36,3 +80,5 @@
 
   <button type="submit">Add Cat</button>
 </form>
+
+</div> --}}
