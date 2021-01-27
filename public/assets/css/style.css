@@ -20,21 +20,16 @@ body {
 }
 
 li {
+  /* display: flex; */
   padding: 5px;
   margin: 5px;
   background: #faebd7;
 }
 
+#button-span {
+  float: right;
+}
+
 .label {
   font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
-.form-group {
-  margin-bottom: 5px;
 }
